@@ -58,15 +58,15 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+
 function playGame(){
     for (let i = 0; i < 5; i++){
         const computerChoice = getComputerChoice();
         const humanChoice = getHumanChoice();
-        console.log('\n');
-        console.log('***');
         console.log(`Tour n° : ${i+1}`);
         playRound(humanChoice, computerChoice);
         console.log(`Your score: ${humanScore}, Computer score: ${computerScore}`);
+        console.log('\n');
     }
     if (humanScore === computerScore){
         console.log('It\'s a tie!');
